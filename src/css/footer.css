@@ -1,1 +1,136 @@
+.footer {
+    background: #b58869;
+    padding: 24px 0;
+}
+
+.footer-container {
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 40px;
+    width: 288px;
+    height: 500px;
+    padding: 32px 48px;
+    background: #c29d84;
+    margin: auto
+}
+
+.div-logo-link {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-svg-logo {
+    width: 147px;
+    height: 85px;
+}
+
+ .footer-svg {
+     width: 32px;
+     height: 32px;
+ }
+
+.footer-ul-icons {
+    display: flex;
+    gap: 12px;
+    height: 32px;
+}
+
+.footer-nav-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 32px 0 0;
+}
+
+.footer-nav-li {
+    display: flex;
+   justify-content: center;
+}
+
+.footer-nav-link {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0B0803;
+}
+
+.div-bottom-text {
+    margin: 32px auto 0;
+    width: 320px;
+}
+
+.bottom-text {
+    text-align: center;
+    padding: 0 24px;
+    color: #0B0803;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer-container {
+        border-radius: 40px;
+            padding: 32px 48px;
+            width: 704px;
+            height: 156px;
+    }
+
+        .footer-svg-logo {
+         width: 84px;
+        height: 36px;
+        }
+
+        .footer-svg {
+            width: 24px;
+            height: 24px;
+        }
+     
+.div-footer-link {
+    display: flex;
+    align-items: center;
+}
+
+        .footer-ul-icons {
+            height: 24px;
+        }
+
+    .footer-nav-ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .footer-container {
+        border-radius: 40px;
+            padding: 32px 48px;
+            width: 1312px;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 538px;
+        }
+
+                .div-logo-link {
+                    width: 220px;
+                }
+
+     .footer-nav-ul {
+        margin: 0;
+        width: 456px;
+    }
+
+        .div-footer-nav {
+            display: flex;
+            align-items: center;
+        }
+
+}
 
