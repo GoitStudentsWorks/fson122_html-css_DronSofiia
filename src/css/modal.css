@@ -1,0 +1,113 @@
+/* Success subscription */
+.success-subscription {
+  padding: 64px 16px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.subscription-container {
+  position: relative;
+  border-radius: 40px;
+  padding: 64px 16px;
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+  background-color: #e0cbb4;
+  text-align: center;
+}
+.subscription-icon-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+  fill: #0b0803;
+}
+.subscription-title {
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.subscription-text {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 24px;
+}
+
+.subscription-image {
+  max-width: 375px;
+
+  margin: 0 auto;
+}
+.subscription-btn {
+  margin-top: 24px;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 100%;
+  height: 44px;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background-color: #6f4e37;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .subscription-container {
+    padding: 64px 30px;
+    width: 100%;
+    max-width: 704px;
+    height: auto;
+  }
+
+  .subscription-title {
+    font-size: 36px;
+    max-width: 502px;
+  }
+  .subscription-text {
+    max-width: 576px;
+    margin-bottom: 24px;
+  }
+
+  .subscription-image {
+    border-radius: 40px;
+    width: 644px;
+
+    margin-bottom: 48px;
+  }
+  .subscription-btn {
+    width: 340px;
+  }
+}
+@media (min-width: 1440px) {
+  .subscription-container {
+    max-width: 856px;
+  }
+  .subscription-icon-close {
+    right: 73px;
+  }
+  .subscription-title {
+    font-size: 48px;
+    max-width: 738px;
+  }
+  .subscription-text {
+    max-width: 738px;
+    margin-bottom: 48px;
+  }
+
+  .subscription-image {
+    margin-bottom: 64px;
+  }
+  .subscription-btn {
+    width: 274px;
+  }
+}
