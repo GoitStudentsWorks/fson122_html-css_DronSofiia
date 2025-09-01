@@ -78,6 +78,7 @@
     text-decoration-skip-ink: none;
     color: #0b0803;
     display: block;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .location-list-address {
@@ -95,6 +96,7 @@
     color: #0b0803;
     display: flex;
     align-items: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .location-icon-right {
