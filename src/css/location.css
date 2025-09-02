@@ -18,9 +18,7 @@
 
 .location-text-find {
     font-weight: 600;
-    font-size: 16px;
     line-height: 1.5;
-    color: #0b0803;
     margin-bottom: 16px;
 }
 
@@ -30,15 +28,12 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
-    color: #0b0803;
     margin-bottom: 24px;
 }
 
 .location-text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    color: #0b0803;
 }
 
 .location-address {
@@ -62,17 +57,13 @@
 
 .location-list-text {
     font-family: "Aboreto", sans-serif;
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.01em;
-    color: #0b0803;
     margin-bottom: 8px;
 }
 
 .location-list-link {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -82,16 +73,12 @@
 }
 
 .location-list-address {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
-    color: #0b0803;
     margin-bottom: 16px;
 }
 
 .location-link-direction {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     color: #0b0803;
     display: flex;
