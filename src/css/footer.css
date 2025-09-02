@@ -16,13 +16,13 @@
 .div-logo-link {
     display: flex;
     gap: 40px;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-svg-logo {
-    width: 147px;
-    height: 85px;
+.footer-png-logo {
+    width: 196px;
+    height: 84px;
 }
 
  .footer-svg {
@@ -33,7 +33,7 @@
 .footer-ul-icons {
     display: flex;
     gap: 12px;
-    height: 32px;
+height: 32px;   
 }
 
 .footer-nav-ul {
@@ -46,14 +46,15 @@
 .footer-nav-li {
     display: flex;
    justify-content: center;
+    height: 32px;
+      height: 24px;
 }
 
 .footer-nav-link {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 150%;
-    color: #0B0803;
+            display: flex;
+            align-items: center;
+          
 }
 
 .div-bottom-text {
@@ -63,10 +64,6 @@
 
 .bottom-text {
     text-align: center;
-    padding: 0 24px;
-    color: #0B0803;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
 }
@@ -80,9 +77,9 @@
             height: 156px;
     }
 
-        .footer-svg-logo {
+        .footer-png-logo {
          width: 84px;
-        height: 36px;
+        height: 35px;
         }
 
         .footer-svg {
@@ -108,14 +105,13 @@
 @media screen and (min-width: 1440px) {
 
     .footer-container {
-        border-radius: 40px;
-            padding: 32px 48px;
+       
             width: 1312px;
             height: 100px;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            gap: 538px;
+            justify-content: center;
         }
 
                 .div-logo-link {
@@ -124,13 +120,63 @@
 
      .footer-nav-ul {
         margin: 0;
-        width: 456px;
     }
 
         .div-footer-nav {
             display: flex;
-            align-items: center;
+            align-items: center; 
+            margin-left: auto;
         }
 
+/* hover+focus for svg */
+
+.footer-svg {
+    position: relative;
+    opacity: 1;
+    transition: all 0.5s ease-out;
 }
+
+.footer-svg:hover {
+    opacity: 0.5;
+}
+
+.footer-svg:focus {
+    opacity: 0.3;
+}
+
+/* hover+focus for link */
+
+.footer-nav-link {
+    position: relative;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.footer-nav-link:hover {
+    opacity: 0.5;
+}
+
+.footer-nav-link:focus {
+    opacity: 0.3;
+}
+
+.footer-nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 0;
+    height: 4px;
+    background-color: #0b0803;
+    transition: all 0.5s ease-out;
+}
+
+.footer-nav-link:hover:after {
+    width: 100%;
+}
+
+}
+
+
 
