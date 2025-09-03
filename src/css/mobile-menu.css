@@ -38,6 +38,10 @@
     height: 36px;
 }
 
+.mobile-menu-logo{
+    fill: #0b0803;
+}
+
 .mobile-menu-btn {
     position: fixed;
     top: 12px;
