@@ -1,25 +1,39 @@
-<!-- Success subscription -->
-<section class="success-subscription">
-  <div class="subscription-container container">
-    <svg class="subscription-icon-close" width="32" height="32">
+<!-- modal-subscription -->
+<section class="modal-subscription">
+  <div class="modal-container container">
+    <svg class="modal-icon-close" width="32" height="32">
       <use href="../img/image.svg#icon-close"></use>
     </svg>
-    <h2 class="subscription-title">Welcome to the world of CoffeeJoy!</h2>
-    <p class="subscription-text">
+    <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
+    <p class="modal-text">
       Fresh brews, special offers, and cozy updates are coming your way.
     </p>
     <picture>
       <source
         srcset="
-          ../img/subscribe/cup-croissant2@-min.jpg 1x,
-          ../img/subscribe/cup-croissant2@-min.jpg 2x
-        " />
+          ../img/modal/cup-croissant2@-min.jpg 1x,
+          ../img/modal/cup-croissant2@-min.jpg 2x
+        "
+      />
       <img
-        src="../img/subscribe/cup-croissant-min.jpg"
+        src="../img/modal/cup-croissant-min.jpg"
         alt="cup-croissant"
-        class="subscription-image"
-    /></picture>
+        class="modal-image"
+      />
+    </picture>
 
-    <button class="subscription-btn">Close</button>
+    <button class="modal-btn">Close</button>
   </div>
+  <script>
+    const closeBtn = document.querySelector('.modal-btn');
+    const closeIcon = document.querySelector('.modal-icon-close');
+    const modal = document.querySelector('.modal-subscription');
+
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    closeIcon.addEventListener('click', closeModal);
+  </script>
 </section>

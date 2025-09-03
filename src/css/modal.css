@@ -1,9 +1,12 @@
-/* Success subscription */
-.success-subscription {
-  padding: 64px 16px;
+/* modal-subscription */
+.modal-subscription {
+  padding: 64px 0px;
   background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.subscription-container {
+.modal-container {
   position: relative;
   border-radius: 40px;
   padding: 64px 16px;
@@ -11,18 +14,18 @@
   max-width: 375px;
   height: auto;
   background-color: #e0cbb4;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
-.subscription-icon-close {
+.modal-icon-close {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 32px;
-  height: 32px;
-  margin-bottom: 8px;
   fill: #0b0803;
 }
-.subscription-title {
+.modal-title {
   font-family: 'Aboreto', sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -33,24 +36,20 @@
   margin-bottom: 16px;
   text-transform: uppercase;
 }
-.subscription-text {
+.modal-text {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
   color: #0b0803;
+  max-width: 100%;
   margin-bottom: 24px;
 }
 
-.subscription-image {
-  max-width: 375px;
-
-  margin: 0 auto;
-}
-.subscription-btn {
+.modal-btn {
   margin-top: 24px;
   border-radius: 100px;
   padding: 10px 24px;
-  width: 100%;
+  width: 256px;
   height: 44px;
   box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
     inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
@@ -62,52 +61,47 @@
   color: #fff;
 }
 @media (min-width: 768px) {
-  .subscription-container {
-    padding: 64px 30px;
-    width: 100%;
-    max-width: 704px;
-    height: auto;
+  .modal-container {
+    padding: 64px;
+    min-width: 704px;
   }
 
-  .subscription-title {
+  .modal-title {
     font-size: 36px;
-    max-width: 502px;
+    min-width: 502px;
+    margin-bottom: 16px;
   }
-  .subscription-text {
-    max-width: 576px;
-    margin-bottom: 24px;
+  .modal-text {
+    min-width: 576px;
+    margin-bottom: 48px;
   }
 
-  .subscription-image {
+  .modal-image {
     border-radius: 40px;
     width: 644px;
 
     margin-bottom: 48px;
   }
-  .subscription-btn {
+  .modal-btn {
     width: 340px;
   }
 }
 @media (min-width: 1440px) {
-  .subscription-container {
-    max-width: 856px;
+  .modal-container {
+    min-width: 856px;
   }
-  .subscription-icon-close {
+  .modal-icon-close {
     right: 73px;
   }
-  .subscription-title {
+  .modal-title {
     font-size: 48px;
-    max-width: 738px;
+    min-width: 738px;
   }
-  .subscription-text {
-    max-width: 738px;
-    margin-bottom: 48px;
+  .modal-text {
+    min-width: 738px;
   }
 
-  .subscription-image {
-    margin-bottom: 64px;
-  }
-  .subscription-btn {
+  .modal-btn {
     width: 274px;
   }
 }
