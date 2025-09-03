@@ -1,57 +1,53 @@
 /* база */
 .benefits-section {
-    padding: 64px 0 80px;
+    padding: 64px 0;
 }
-.benefits-section .benefits-section-title {
+.benefits-section-title {
     font-family: "Aboreto", sans-serif;
 }
-.benefits-section .benefits-section-name {
+.benefits-section-name {
     display: block;
     width: 55px;
-    height: 24px;
-    line-height: 24px;
+    line-height: 1.5;
     margin: 0 auto 16px;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
 }
-.benefits-section .benefits-section-title {
+.benefits-section-title {
     margin: 0 auto 24px;
     text-align: center;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 48px;
     line-height: 1.2;
     letter-spacing: -0.01em;
-    text-wrap: balance;
-    overflow-wrap: break-word;
-    hyphens: auto;
 }
-.benefits-section .benefits-descr {
+.benefits-descr {
     margin: 0 auto 32px;
     text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
 }
-.benefits-section .benefits-list {
+.benefits-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
 }
-.benefits-section .benefits-card {
+.benefits-card {
     display: flex;
     flex-direction: column;
 }
-.benefits-section picture {
+picture {
     display: block;
     width: 100%;
 }
-.benefits-section img {
+img {
     width: 100%;
     border-radius: 32px;
     object-fit: cover;
 }
-.benefits-section .benefits-item-title {
+.benefits-item-title {
     margin-top: 8px;
     margin-bottom: 8px;
     font-weight: 600;
@@ -59,38 +55,38 @@
     line-height: 1.5;
     text-align: center;
 }
-.benefits-section .benefits-item-descr {
+.benefits-item-descr {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
 }
 /* гумова */
-@media (max-width:374.98px) {
-    .benefits-section .benefits-intro,
-    .benefits-section .benefits-cards {
+@media (max-width:374px) {
+    .benefits-intro,
+    .benefits-cards {
         width: 288px;
         margin-inline: auto;
     }
     .benefits-section .benefits-list {
         gap: 0;
     }
-    .benefits-section .benefits-item+.benefits-item {
+    .benefits-item+.benefits-item {
         margin-top: 24px;
     }
-    .benefits-section .benefits-media,
-    .benefits-section .benefits-card>img {
+    .benefits-media,
+    .benefits-card>img {
         margin-bottom: 32px;
     }
-    .benefits-section img {
+    img {
         aspect-ratio: 288/164;
     }
 }
 /* мобайл */
-@media (min-width:375px) and (max-width:767.99px) {
+@media (min-width:375px) and (max-width:767px) {
 
-    .benefits-section .benefits-intro,
-    .benefits-section .benefits-cards {
+    .benefits-intro,
+    .benefits-cards {
         width: 288px;
         margin-inline: auto;
     }
@@ -100,83 +96,80 @@
         line-height: 1.2;
         letter-spacing: -0.01em;
     }
-    .benefits-section .benefits-descr {
+    .benefits-descr {
         font-size: 18px;
         line-height: 1.5;
     }
     .benefits-section .benefits-list {
         gap: 0;
     }
-    .benefits-section .benefits-item+.benefits-item {
+    .benefits-item+.benefits-item {
         margin-top: 24px;
     }
-    .benefits-section .benefits-media,
-    .benefits-section .benefits-card>img {
+    .benefits-media,
+    .benefits-card>img {
         margin-bottom: 32px;
     }
-    .benefits-section img {
+    img {
         aspect-ratio: 288/164;
     }
 }
 /* таблет */
-@media (min-width:768px) and (max-width:1439.99px) {
+@media (min-width:768px) and (max-width:1439px) {
     .benefits-section {
-        padding: 64px 0 96px;
+        padding: 64px 0;
     }
-    .benefits-section .benefits-section-title {
+    .benefits-section-title {
         font-weight: 400;
         font-size: 36px;
         line-height: 1.2;
         letter-spacing: -0.01em;
         width: 452px;
-        height: 86px;
         margin: 0 auto 24px;
-        overflow: hidden;
     }
     .benefits-section .benefits-descr {
         font-size: 18px;
         line-height: 1.5;
         margin: 0 auto 32px;
-        max-width: 640px;
+        max-width: 704px;
     }
     .benefits-section .benefits-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 32px;
     }
-    .benefits-section .benefits-item:nth-child(3) {
+    .benefits-item:nth-child(3) {
         grid-column: 1 / -1;
     }
-    .benefits-section .benefits-media,
-    .benefits-section .benefits-card>img {
-        margin-bottom: 24px;
+    .benefits-media,
+    .benefits-card>img {
+        margin-bottom: 32px;
     }
     .benefits-section .benefits-item-title {
+        margin-top: 0;
         margin-bottom: 8px;
     }
-    .benefits-section .benefits-item:nth-child(1) .benefits-item-title,
-    .benefits-section .benefits-item:nth-child(2) .benefits-item-title {
+    .benefits-item:nth-child(1) .benefits-item-title,
+    .benefits-item:nth-child(2) .benefits-item-title {
         padding-inline: 28px;
     }
-    .benefits-section .benefits-item:nth-child(1) .benefits-item-descr,
-    .benefits-section .benefits-item:nth-child(2) .benefits-item-descr {
+    .benefits-item:nth-child(1) .benefits-item-descr,
+    .benefits-item:nth-child(2) .benefits-item-descr {
         padding-inline: 23px;
     }
-    .benefits-section .benefits-item:nth-child(3) .benefits-item-descr {
+    .benefits-item:nth-child(3) .benefits-item-descr {
         width: 440px;
-        height: 48px;
         margin: 0 auto;
-        overflow: hidden;
     }
-    .benefits-section img {
+    img {
         aspect-ratio: 352/237;
     }
 }
 /* десктоп */
 @media (min-width:1440px) {
     .benefits-section {
-        padding: 64px 0 120px;
+        padding: 64px 0;
     }
-    .benefits-section .benefits-cards {
+    .benefits-cards {
         max-width: 1312px;
         margin-inline: auto;
     }
@@ -186,15 +179,18 @@
         gap: 24px;
         align-items: flex-start;
     }
-    .benefits-section .benefits-list .benefits-item {
+    .benefits-list .benefits-item {
         flex: 0 0 calc((100% - 48px) / 3);
         min-width: 0;
     }
-    .benefits-section .benefits-list .benefits-item+.benefits-item {
+    .benefits-list .benefits-item:first-child {
+        min-width: 0;
+    }
+    .benefits-list .benefits-item+.benefits-item {
         margin-top: 0;
     }
-    .benefits-section .benefits-card>img,
-    .benefits-section .benefits-media img {
+    .benefits-card>img,
+    .benefits-media img {
         width: 100%;
         height: 240px;
         object-fit: cover;
@@ -202,41 +198,36 @@
         display: block;
         margin-bottom: 32px;
     }
-    .benefits-section .benefits-item-title {
+    .benefits-item-title {
         margin-top: 0;
         margin-bottom: 8px;
-        /* title → descr */
         font-weight: 600;
         font-size: 20px;
         line-height: 1.5;
         text-align: center;
         color: #0b0803;
     }
-    .benefits-section .benefits-item-descr {
+    .benefits-item-descr {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
         color: #0b0803;
     }
-    .benefits-section .benefits-section-title {
+    .benefits-section-title {
         font-weight: 400;
         font-size: 48px;
         line-height: 1.16;
         letter-spacing: -0.01em;
         width: 768px;
-        height: 116px;
         margin: 0 auto 18px;
-        overflow: hidden;
         text-align: center;
     }
-    .benefits-section .benefits-descr {
+    .benefits-descr {
         font-size: 18px;
         line-height: 1.5;
-        width: 768px;
-        height: 81px;
+        max-width: 768px;
         margin: 0 auto 32px;
-        overflow: hidden;
         text-align: center;
     }
 }
