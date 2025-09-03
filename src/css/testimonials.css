@@ -16,6 +16,7 @@
 }
 .testimonials-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
@@ -24,16 +25,18 @@
   border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 32px;
   padding: 32px;
-  max-width: 288px;
+  max-width: 100%;
   min-height: 235px;
   min-width: 265px;
   background-color: #c29d84;
+
   display: flex;
   flex-direction: column;
 }
 
 .testimonials-icon-group {
   display: flex;
+
   flex-direction: row;
   gap: 4px;
   margin-bottom: 24px;
