@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-.footer-png-logo {
+.footer-svg-logo {
     width: 196px;
     height: 84px;
 }
@@ -77,7 +77,7 @@ height: 32px;
             height: 156px;
     }
 
-        .footer-png-logo {
+        .footer-svg-logo {
          width: 84px;
         height: 35px;
         }
