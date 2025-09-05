@@ -1,0 +1,155 @@
+.location {
+    padding: 64px 0;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.location-contacts-wrapper {
+    width: 100%;
+}
+
+.location-text-wrapper {
+    margin-bottom: 40px;
+}
+
+.location-text-find {
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.location-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+.location-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.location-address {
+    font-style: normal;
+}
+
+.location-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.location-item {
+    width: 100%;
+}
+
+.location-icon {
+    fill: #0b0803;
+    margin-bottom: 16px;
+}
+
+.location-list-text {
+    font-family: "Aboreto", sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.location-list-link {
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #0b0803;
+    display: block;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location-list-address {
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.location-link-direction {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #0b0803;
+    display: flex;
+    align-items: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location-icon-right {
+    margin-left: 8px;
+    fill: #0b0803;
+}
+
+.location-map-wrapper {
+    border-radius: 40px;
+    width: 100%;
+    height: 307px;
+    overflow: hidden;
+}
+
+.location-map-frame {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .location-list {
+        flex-wrap: nowrap;
+    }
+
+    .location-item {
+        width: calc((100% - 80px) / 3);
+    }
+
+    .location-map-wrapper {
+        height: 377px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .location-container {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .location-contacts-wrapper {
+        max-width: 419px;
+    }
+
+    .location-title {
+        font-size: 48px;
+    }
+
+    .location-list {
+        flex-wrap: wrap;
+    }
+
+    .location-item {
+        width: 100%;
+    }
+
+    .location-list-link:hover,
+    .location-link-direction:hover {
+        opacity: 0.5;
+    }
+
+    .location-list-link:focus,
+    .location-link-direction:focus {
+        opacity: 0.7;
+    }
+
+    .location-map-wrapper {
+        height: 697px;
+    }
+}

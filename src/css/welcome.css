@@ -55,6 +55,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .welcome-btn-svg {
   fill: #fff;
