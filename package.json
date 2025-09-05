@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-CoffeeJoy10/",
+    "build": "vite build --base=/fson122_html-css_DronSofiia/",
     "preview": "vite preview"
   },
   "devDependencies": {
