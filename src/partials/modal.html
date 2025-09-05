@@ -2,7 +2,7 @@
 <section class="modal-subscription">
   <div class="modal-container container">
     <svg class="modal-icon-close" width="32" height="32">
-      <use href="../img/image.svg#icon-close"></use>
+      <use href="/img/image.svg#icon-close"></use>
     </svg>
     <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
     <p class="modal-text">
@@ -11,12 +11,12 @@
     <picture>
       <source
         srcset="
-          ../img/modal/cup-croissant2@-min.jpg 1x,
-          ../img/modal/cup-croissant2@-min.jpg 2x
+          /img/modal/cup-croissant2@-min.jpg 1x,
+          /img/modal/cup-croissant2@-min.jpg 2x
         "
       />
       <img
-        src="../img/modal/cup-croissant-min.jpg"
+        src="/img/modal/cup-croissant-min.jpg"
         alt="cup-croissant"
         class="modal-image"
       />
@@ -24,16 +24,4 @@
 
     <button class="modal-btn">Close</button>
   </div>
-  <script>
-    const closeBtn = document.querySelector('.modal-btn');
-    const closeIcon = document.querySelector('.modal-icon-close');
-    const modal = document.querySelector('.modal-subscription');
-
-    function closeModal() {
-      modal.style.display = 'none';
-    }
-
-    closeBtn.addEventListener('click', closeModal);
-    closeIcon.addEventListener('click', closeModal);
-  </script>
-</section>
+ 
