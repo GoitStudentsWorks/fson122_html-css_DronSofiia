@@ -1,6 +1,5 @@
 .welcome-page {
-  padding: 64px 16px;
-
+  padding: 64px 0;
   background-color: #e0cbb4;
 }
 .welcome-description {
@@ -66,14 +65,12 @@
 
 .welcome-image {
   border-radius: 40px;
+
   width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .welcome-page {
-    min-width: 768px;
-  }
-
   .welcome-container {
     width: 336px;
   }
@@ -89,9 +86,6 @@
   }
 }
 @media (min-width: 1440px) {
-  .welcome-page {
-    width: 1440px;
-  }
   .welcome-description {
     margin-bottom: 80px;
   }
@@ -100,9 +94,7 @@
     width: 640px;
   }
   .welcome-btn:hover,
-  .welcome-btn-svg:hover,
-  .welcome-btn:focus,
-  .welcome-btn-svg:focus {
+  .welcome-btn:focus {
     opacity: 0.5;
   }
 
