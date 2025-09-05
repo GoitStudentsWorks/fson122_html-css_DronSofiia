@@ -7,7 +7,6 @@
 }
 .benefits-section-name {
     display: block;
-    width: 55px;
     line-height: 1.5;
     margin: 0 auto 16px;
     font-weight: 600;
@@ -38,10 +37,19 @@
     display: flex;
     flex-direction: column;
 }
+.benefits-media {
+    margin-bottom: 32px;
+    line-height: 0;
+}
 picture {
     display: block;
     width: 100%;
-}
+} 
+/* .benefits-media {
+    display: block;
+    width: 100%;
+    margin: 0 0 32px;
+}*/
 img {
     width: 100%;
     border-radius: 32px;
@@ -60,13 +68,13 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+    margin-top: 0;
 }
 /* гумова */
 @media (max-width:374px) {
     .benefits-intro,
     .benefits-cards {
-        width: 288px;
-        margin-inline: auto;
+        width: 100%;
     }
     .benefits-section .benefits-list {
         gap: 0;
@@ -74,10 +82,7 @@ img {
     .benefits-item+.benefits-item {
         margin-top: 24px;
     }
-    .benefits-media,
-    .benefits-card>img {
-        margin-bottom: 32px;
-    }
+ 
     img {
         aspect-ratio: 288/164;
     }
@@ -105,10 +110,6 @@ img {
     }
     .benefits-item+.benefits-item {
         margin-top: 24px;
-    }
-    .benefits-media,
-    .benefits-card>img {
-        margin-bottom: 32px;
     }
     img {
         aspect-ratio: 288/164;
@@ -139,10 +140,6 @@ img {
     }
     .benefits-item:nth-child(3) {
         grid-column: 1 / -1;
-    }
-    .benefits-media,
-    .benefits-card>img {
-        margin-bottom: 32px;
     }
     .benefits-section .benefits-item-title {
         margin-top: 0;
@@ -189,14 +186,12 @@ img {
     .benefits-list .benefits-item+.benefits-item {
         margin-top: 0;
     }
-    .benefits-card>img,
     .benefits-media img {
         width: 100%;
         height: 240px;
         object-fit: cover;
         border-radius: 32px;
         display: block;
-        margin-bottom: 32px;
     }
     .benefits-item-title {
         margin-top: 0;
