@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.querySelector('.modal-subscription');
-  const openBtn = document.querySelector('.open-modal-btn');
+  const openBtn = document.querySelector('.subscription-open');
   const closeBtn = document.querySelector('.modal-btn');
   const closeIcon = document.querySelector('.modal-icon-close');
 
