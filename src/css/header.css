@@ -23,6 +23,7 @@
   font-size: 16px;
   line-height: 1.5;
   color: #0b0803;
+  display: block;
 }
 .header-nav-list-item.underline {
   position: relative;
